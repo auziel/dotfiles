@@ -115,4 +115,5 @@ function mountAndroid { hdiutil attach ~/android.dmg -mountpoint /Volumes/androi
 function umountAndroid() { hdiutil detach /Volumes/android; }
 function kapkinfo () { aapt dump badging "$1" | grep package:\ name ; }
 
-
+# set the number of open files to be 1024 (for building AOSP)
+ulimit -S -n 1024

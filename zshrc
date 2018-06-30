@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/opt/local/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/avi/.oh-my-zsh"
@@ -94,6 +94,19 @@ export LANG=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source ~/.kaymera-aliases.sh
+
+# Aliases
+alias ll='ls -al'
+alias ltr='ls -altr'
+alias fapk='find . -name "*apk"'
+
+ # gerrit
+alias kgreset='git fetch && git reset --hard origin/master'
+alias kgfetch='git fetch && git rebase'
+alias kgs='git status'
+alias kgl='git log --decorate'
+alias kglo='git log --oneline --decorate'
+alias kgc='git-cola&'
 
 
 # mount the android file image

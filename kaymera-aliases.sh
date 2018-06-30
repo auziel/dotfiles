@@ -1,7 +1,4 @@
-# Aliases
-alias ll='ls -al'
-alias ltr='ls -altr'
-alias fapk='find . -name "*apk"'
+
 # SSH alias
 alias theone='ssh -tt gcon@10.0.60.161 sudo /root/connector.py'
 
@@ -30,10 +27,3 @@ alias ssh-mdmdev='ssh -i ~/.ssh/ukraine.pem kaymera_dev@mdmdev'
 alias ssh-prod-syslog='ssh -i ~/.ssh/ukraine.pem kaymera-dev@prod-syslog'
 alias ssh-jenkins='ssh -i ~/.ssh/id_rsa kaymera@10.0.70.172'
 
-# gerrit
-alias kgreset='git fetch && git reset --hard origin/master'
-alias kgfetch='git fetch && git rebase'
-alias kgs='git status'
-alias kgl='git log --decorate'
-alias kglo='git log --oneline --decorate'
-alias kgc='git-cola&'
